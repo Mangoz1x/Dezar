@@ -1,0 +1,127 @@
+.section-last {
+    width: 100%;
+    height: fit-content;
+}
+
+.wwu-title {
+    text-align: center;
+    font-size:40px;
+}
+
+.button-manager {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.img-btn {
+    background-image: url("../Dear-Photos/image1.jpeg");
+    background-size: cover;
+    width: fit-content;
+    min-height: 300px;
+    height: fit-content;
+    margin: 5px;
+    border-radius: 15px;
+}
+
+.pos-float {
+    float:right;
+    margin-right:10px;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+}
+
+.btn-group-model:hover .pos-float {
+    color:blueviolet;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+    transform: rotate(90deg);
+}
+
+.btn-group-model {
+    margin:14px; 
+    color: #eee; 
+    padding: 20px 34px; 
+    display: inline-block;
+    margin-top:10px;
+    text-decoration:none;
+    height: fit-content;
+    border-bottom:1px solid black;
+    font-size: 14px;
+    border-radius: 15px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border: none !important;
+    width: 250px;
+}
+
+.dropdown-build {
+    overflow: hidden;
+    margin: 0;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+    opacity: 0;
+    height: 0;
+}
+
+.custom-margin-rem {
+    padding: 5px;
+}
+
+.btn-group-model:hover .custom-margin-build {
+    margin-bottom: -30px !important;
+}
+
+.btn-group-model:hover .custom-margin-rem {
+    margin-bottom: 10px !important;
+}
+
+.btn-group-model:hover .custom-margin-finish {
+    margin-bottom: -50px !important;
+}
+
+.btn-group-model:hover .custom-margin-5 {
+    margin-bottom: 25px !important;
+}
+
+.btn-group-model:hover .dropdown-build {
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+    height: 220px !important;
+    overflow: hidden;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    opacity: 1;
+}
+
+@media screen and (max-width: 375px) {
+    .btn-group-model {
+        width: 200px;
+    }
+
+    .img-btn {
+        width: fit-content;
+    }
+
+    .btn-group-model:hover .dropdown-build {
+        height: 265px !important;
+    }
+}
+
+@media screen and (max-width: 315px) {
+    .btn-group-model {
+        width: 150px;
+    }
+
+    .img-btn {
+        width: fit-content;
+    }
+}

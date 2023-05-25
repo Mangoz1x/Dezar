@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html>
+<body style="height: fit-content;">
+    <head>
+        <title>Dear.inc</title>
+
+            <!-- STYLE SHEETS -->
+                <link rel="stylesheet" href="Style/contact-style.css">
+                <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+                <meta name="viewport" content="width=device-width, initial-scale=1">
+                <link href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/themes/smoothness/jquery-ui.css" rel="stylesheet" type="text/css"/>
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+                <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+                <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+                <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+            
+                <!-- KEYTWORDS AND SEO OPTIMISATION -->
+                <title>YOUR SEO WORDS HERE __________________________________________________________________</title>
+                <link rel="shortcut icon" type="Images/ico" href="Images/favicon.ico"> <!-- FAVICON ICON AKA THE LOGO OF UR SITE AT THE GOOGLE TAB AREA -->
+                <meta name="description" content="YOUR DESCTIPTION WITH KEYWORDS">
+                <meta name="keywords" content="Keyword Example, Next Keyword, Must Have Commas,">
+                <meta name="author" content="YOUR NAME FOR KEYWORDS EG TANNAZ MOKHTARI">
+                <meta charset="UTF-8">
+                <!-- IMPORTANT --- COMPRESS IMAGE FILES FOR FASTER SITE -->
+                <!-- IMPORTANT --- ADD ALT TAGS TO IMAGES -->
+                <!-- IMPORTANT --- ADD TITLES TO IMAGES EG title="what the button does" -->
+                <!-- IMPORTANT --- MAKE SITE MOBILE FRIENDLY -->
+            <!-- END -->
+
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+
+
+    <!--
+    <img src="Dear-Photos/1.png" style="width:100%;">
+    -->
+
+
+    <div class="topnav" id="myTopnav" style="color:black; border-color:black; z-index: 99999999;">
+        <a href="index.html" class="name img-controll">
+          <img src="Dear-Photos/new-logo.png" class="topnav-logo">
+        </a>
+        <img src="Dear-Photos/dezar-text.png" class="topnav-text-logo">
+        <a href="index.html" class="active" style="color:black; border-color:black; z-index: 99999999;" title="go back to the main page">HOME</a>
+        <a href="quote.html" style="color:black; border-color:black; z-index: 99999999;" title="get a quote">GET A QUOTE</a>
+        <a href="contact.html" style="color:black; border-color:black; z-index: 99999999;" title="contact us for help or general questions">CONTACT</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()" style="color:black; z-index: 99999999;">
+            <i class="fa fa-bars" style="color:black; border-color:black; z-index: 99999999;" title="open the main menu"></i>
+        </a>
+    </div>
+
+    <div class="background-para-scroll" style="color:black;">
+        <div class="Topnav-1" style="color:black;">
+            <a href="index.html" class="Name-1 img-controll">
+              <img src="Dear-Photos/new-logo.png" class="topnav-logo">
+              <img src="Dear-Photos/dezar-text.png" class="topnav-text-logo">
+            </a>
+            <a href="index.html" class="Active-1" style="color:black; border-color:black;" title="go back to the main page">HOME</a>
+            <a href="quote.html" style="color:black; border-color:black;" title="get a quote">GET A QUOTE</a>
+            <a href="contact.html" style="color:black; border-color:black;" title="contact us for help or general questions">CONTACT</a>
+        </div>
+    </div>
+
+<div class="center-items-center">
+    <form id="regForm" action="https://formspree.io/f/xzbkodlp" method="POST" autocomplete="off">
+        <!-- One "tab" for each step in the form: -->
+        <div class="tab">Info:
+          <p><input placeholder="First & Last Name..." oninput="this.className = ''" name="fullname" autocomplete="off" title="enter you first and last name"></p>
+          <p><input placeholder="Phone eg.999-999-9999" oninput="this.className = ''" name="phone" autocomplete="on" title="enter your phone number"></p>
+          <p><input placeholder="Email..." oninput="this.className = ''" name="email" autocomplete="on" title="enter your email"></p>
+          <p><input placeholder="Address..." oninput="this.className = ''" name="address" autocomplete="off" title="enter your home adress or the address you would like us to work at"></p>
+        </div>
+        <div class="tab">Project Info:
+          <p><input placeholder="Description of the work you want to be done, budget, etc." oninput="this.className = ''" name="Project Info" title="enter a description of the work you want to be done, budget, etc."></p>
+        </div>
+        <!--
+        <div class="tab">Adress:
+          <p><input placeholder="Adress:" oninput="this.className = ''" name="Adress:"></p>
+        </div>
+        <div class="tab">Info:
+          <p><input placeholder="Info:" oninput="this.className = ''" name="Info:"></p>
+        </div>
+        -->
+        <div style="overflow:auto;">
+          <div>
+            <button type="button" id="prevBtn" onclick="nextPrev(-1)" title="go back one step">Previous</button>
+            <button type="button" id="nextBtn" onclick="nextPrev(1)" title="go to the next step">Next</button>
+            <a href="index.html" class="homeBtn">Home</a>
+          </div>
+        </div>
+        <!-- Circles which indicates the steps of the form: -->
+        <div style="text-align:center;margin-top:40px;">
+          <span class="step"></span>
+          <span class="step"></span>
+        </div>
+    </form>
+</div>
+
+<div class="dezar-footer">
+  <div class="grid-centerContent" style="text-align: center;">
+      <a href="https://www.instagram.com/dezr.inc/" target="_blank" style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box !important;">
+        <img src="https://eep.io/mc-cdn-images/icons/social-block-v2/color-instagram-96.png" alt="Link" class="mcnFollowBlockIcon" style="max-width: 48px;">
+      </a>
+      <p>&copy; DezarINC 2021</p>
+  </div>
+</div>
+</body>
+</html>
+
+<script> 
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+          x.className += " responsive";
+      } else {
+          x.className = "topnav";
+      }
+    }
+</script>
+
+<script>
+    AOS.init();
+</script>
+
+<script>
+    var currentTab = 0; // Current tab is set to be the first tab (0)
+    showTab(currentTab); // Display the current tab
+    
+    function showTab(n) {
+      // This function will display the specified tab of the form...
+      var x = document.getElementsByClassName("tab");
+      x[n].style.display = "block";
+      //... and fix the Previous/Next buttons:
+      if (n == 0) {
+        document.getElementById("prevBtn").style.display = "none";
+      } else {
+        document.getElementById("prevBtn").style.display = "inline";
+      }
+      if (n == (x.length - 1)) {
+        document.getElementById("nextBtn").innerHTML = "Submit";
+      } else {
+        document.getElementById("nextBtn").innerHTML = "Next";
+      }
+      //... and run a function that will display the correct step indicator:
+      fixStepIndicator(n)
+    }
+    
+    function nextPrev(n) {
+      // This function will figure out which tab to display
+      var x = document.getElementsByClassName("tab");
+      // Exit the function if any field in the current tab is invalid:
+      if (n == 1 && !validateForm()) return false;
+      // Hide the current tab:
+      x[currentTab].style.display = "none";
+      // Increase or decrease the current tab by 1:
+      currentTab = currentTab + n;
+      // if you have reached the end of the form...
+      if (currentTab >= x.length) {
+        // ... the form gets submitted:
+        document.getElementById("regForm").submit();
+        return false;
+      }
+      // Otherwise, display the correct tab:
+      showTab(currentTab);
+    }
+    
+    function validateForm() {
+      // This function deals with validation of the form fields
+      var x, y, i, valid = true;
+      x = document.getElementsByClassName("tab");
+      y = x[currentTab].getElementsByTagName("input");
+      // A loop that checks every input field in the current tab:
+      for (i = 0; i < y.length; i++) {
+        // If a field is empty...
+        if (y[i].value == "") {
+          // add an "invalid" class to the field:
+          y[i].className += " invalid";
+          // and set the current valid status to false
+          valid = false;
+        }
+      }
+      // If the valid status is true, mark the step as finished and valid:
+      if (valid) {
+        document.getElementsByClassName("step")[currentTab].className += " finish";
+      }
+      return valid; // return the valid status
+    }
+    
+    function fixStepIndicator(n) {
+      // This function removes the "active" class of all steps...
+      var i, x = document.getElementsByClassName("step");
+      for (i = 0; i < x.length; i++) {
+        x[i].className = x[i].className.replace(" active", "");
+      }
+      //... and adds the "active" class on the current step:
+      x[n].className += " active";
+    }
+</script>
+
+<style>
+body {
+    background-color:white;
+}
+
+@media only screen and (max-width: 1000px) {
+    .responsive {
+      height: 100vh !important;
+      background-color: white;
+    }
+}
+
+.homeBtn {
+    padding:10px;
+    font-family: Raleway;
+    border-radius: 40px;
+    border:3px solid black;
+    color:black;
+    text-decoration:none;
+    font-weight: bolder;
+    float:right;
+    box-sizing: border-box;
+}
+
+@media only screen and (max-width: 600px) {
+    .homeBtn {
+      float:left;
+      margin-right:10px;
+      margin-top:10px;
+      box-sizing: border-box;
+    }
+}
+  
+#regForm {
+    box-sizing: border-box;
+    font-family: Raleway;
+    padding: 40px;
+    width: 70%;
+    min-width: 300px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+  
+input {
+    padding: 10px;
+    width: 100%;
+    font-size: 17px;
+    font-family: Raleway;
+    border: 1px solid #aaaaaa;
+    border-top:none;
+    border-right:none;
+    border-left:none;
+    outline:none;
+    box-sizing: border-box;
+}
+  
+/* Mark input boxes that gets an error on validation: */
+input.invalid {
+    background-color: #ffffff;
+    box-sizing: border-box;
+}
+  
+/* Hide all steps by default: */
+.tab {
+    display: none;
+    box-sizing: border-box;
+}
+  
+button {
+    border:3px solid black;
+    color: #ffffff;
+    padding: 10px 20px;
+    font-size: 17px;
+    font-family: Raleway;
+    cursor: pointer;
+    border-radius: 40px;
+    color:black;
+    font-weight: bold;
+    transition:0.3s;
+    outline:none;
+    box-sizing: border-box;
+}
+
+@media only screen and (max-width: 600px) {
+    button {
+      margin-top:10px;
+      margin-right:9px;
+      box-sizing: border-box;
+    }
+}
+  
+button:hover {
+    border-color:blueviolet;
+    color:blueviolet;
+    transition:0.3s;
+    box-sizing: border-box;
+}
+  
+#prevBtn {
+    background-color: #fff;
+    box-sizing: border-box;
+}
+  
+/* Make circles that indicate the steps of the form: */
+.step {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: black;
+    border: none;  
+    border-radius: 50%;
+    display: inline-block;
+    opacity: 0.5;
+    box-sizing: border-box;
+}
+  
+.step.active {
+    opacity: 1;
+    box-sizing: border-box;
+}
+  
+/* Mark the steps that are finished and valid: */
+.step.finish {
+    background-color: blueviolet;
+    box-sizing: border-box;
+}
+</style>
+
+
+
+
+

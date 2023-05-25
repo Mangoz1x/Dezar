@@ -1,0 +1,32 @@
+.section-six {
+    width: 100%;
+    height: fit-content;
+}
+
+.our-projects {
+    font-weight: lighter;
+    font-size: 45px;
+}
+
+.responsive-image {
+    width: 32%;
+    margin: 10px;
+}
+
+@media screen and (max-width: 1250px) {
+    .responsive-image-container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .responsive-image {
+        width: 700px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .responsive-image {
+        width: 95%;
+    }
+}

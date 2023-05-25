@@ -1,0 +1,476 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+}
+
+/* Public classes / shared classes */
+
+/* Center Content Styles */
+
+.centerContent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.centerContentX {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.centerContentY {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+/* Center Content Styles End */
+.fd-col {
+    flex-direction: column;
+}
+
+.p-4 {
+    padding: 25px;
+}
+
+.bg-dark {
+    background-color: #222;
+}
+
+.bg-red-primary {
+    background-color: #ff3d00;
+}
+
+.bg-darker {
+    background-color: #111 !important;
+}
+
+.ml-auto {
+    margin-left: auto;
+}
+
+/* Media query for ml-auto */
+@media only screen and (max-width: 800px) {
+    .ml-auto {
+        margin-left: 0;
+    }
+}
+
+
+.ml-8 {
+    margin-left: 50px;
+}
+
+.ml-6 {
+    margin-left: 35px;
+}
+
+.ml-4 {
+    margin-left: 25px;
+}
+
+.ml-2 {
+    margin-left: 12.5px;
+}
+
+.ml-1 {
+    margin-left: 7px;
+}
+
+.mb-8 {
+    margin-bottom: 50px;
+}
+
+.mb-6 {
+    margin-bottom: 35px;
+}
+
+.mb-4 {
+    margin-bottom: 25px;
+}
+
+.mb-2 {
+    margin-bottom: 12.5px;
+}
+
+.mb-1 {
+    margin-bottom: 7px;
+}
+
+.mt-8 {
+    margin-top: 50px;
+}
+
+.mt-4 {
+    margin-top: 25px;
+}
+
+.mt-2 {
+    margin-top: 12.5px;
+}
+
+.mt-1 {
+    margin-top: 7px;
+}
+
+.m-0 {
+    margin: 0;
+}
+
+.mr-4 {
+    margin-right: 25px;
+}
+
+.mr-auto {
+    margin-right: auto !important;
+}
+
+/* Padding */
+
+.pb-8 {
+    padding-bottom: 50px;
+}
+
+.pt-0 {
+    padding-top: 0;
+}
+
+.p-0 {
+    padding: 0;
+}
+
+
+/* Font size */
+.fs-70 {
+    font-size: 70px;
+} 
+
+.fs-50 {
+    font-size: 50px;
+} 
+
+.fs-20 {
+    font-size: 20px;
+}
+
+.fs-15 {
+    font-size: 15px;
+}
+
+.fs-14 {
+    font-size: 14px;
+}
+
+.fs-10 {
+    font-size: 10px;
+}
+
+/* Font color */
+.fc-h1-primary {
+    color: #ff3d00;
+}
+
+.fc-light-blue {
+    color: lightblue;
+}
+
+.fc-dark-light {
+    color: rgb(180, 180, 180);
+}
+
+.fc-eee {
+    color: #eee;
+}
+
+.fc-eee-ni {
+    color: #eee;
+}
+
+.fc-light {
+    color: white;
+} 
+
+.fc-green {
+    color: #32a852;
+}
+
+.text-alert {
+    color: red;
+}
+
+/* Align text to center */
+.text-align-center {
+    text-align: center;
+}
+
+.font-bold {
+    font-weight: 900;
+}
+
+/* template container */
+
+.template-container {
+    width: 100%;
+    height: 100vh;
+}
+
+/* Cursor styles */
+.cursor-pointer {
+    cursor: pointer;
+}
+
+/* Flex content */
+.d-flex {
+    display: flex;
+}
+
+.jc-center {
+    justify-content: center;
+}
+
+.jc-flex-end {
+    justify-content: flex-end;
+}
+
+.jc-flex-start {
+    justify-content: flex-start;
+}
+
+.ai-flex-end {
+    align-items: flex-end;
+}
+
+.ai-flex-start {
+    align-items: flex-start;
+}
+
+.ai-center {
+    align-items: center;
+}
+
+.fd-row {
+    flex-direction: row;
+}
+
+/* ROWS & COLUMNS */
+.col-4 {
+    width: 25%;
+    padding: 10px;
+    height: 300px;
+}
+
+.col-3 {
+    width: 33%;
+    padding: 10px;
+    height:700px;
+}
+
+.col-2 {
+    width: 33%;
+    padding: 10px;
+    height:700px;
+}
+
+@media screen and (max-width: 1250px) {
+    .col-2 {
+        width: 100%; 
+    }
+
+    .fd-responsive-col-px-1200 {
+        flex-direction: column;
+    }
+}
+
+
+/* Positioning */
+.pos-ab {
+    position: absolute;
+}
+
+.pf-top-0 {
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+/* SPACERS */
+.spacer-px-50 {
+    height: 50px;
+    width: 100%;
+}
+
+.spacer-px-100 {
+    height: 100px;
+    width: 100%;
+}
+
+.spacer-px-150 {
+    height: 150px;
+    width: 100%;
+}
+
+.spacer-px-200 {
+    height: 200px;
+    width: 100%;
+}
+
+.spacer-px-300 {
+    height: 300px;
+    width: 100%;
+}
+
+/* Overides */
+.min-height-overide-none {
+    min-height: 0 !important; 
+}
+
+/* Borders */
+.border-top-primary {
+    border-top: 1px solid #333;
+}
+
+/* buttons */
+.btn-primary {
+    background-color: #111;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    outline: none;
+    transition: 0.3s;
+}
+
+.btn-secondary {
+    background-color: #333;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    outline: none;
+    transition: 0.3s;
+    width: fit-content;
+}
+
+.btn-primary:hover {
+    transition: 0.3s;
+    background-color: #122;
+}
+
+.btn-secondary:hover {
+    transition: 0.3s;
+    background-color: #444;
+}
+
+/* Fill white space */
+.fill-space-full {
+    width: 100%;
+    height: 100%;
+}
+
+/* Overflow */
+.overflow-scroll {
+    overflow: scroll !important;
+}
+
+.overflow-hidden {
+    overflow: hidden;
+}
+
+/* Cards */
+.card {
+    width: 33%;
+    padding: 10px;
+    margin: 10px;
+    background-color: #333;
+    border: 1px solid #444;
+    height: 500px;
+    border-radius: 3px;
+}
+
+/* Height and width */
+.w-100 {
+    width: 100%;
+} 
+
+.h-100 {
+    height: 100vh;
+}
+
+.h-fit-content {
+    height: fit-content !important; 
+}
+
+.w-fit-content {
+    width: fit-content !important;
+}
+
+.w-responsive {
+    width: 100%;
+}
+
+@media screen and (max-width: 1250px) {
+    .w-responsive {
+        width: 90%;
+    }
+
+    .mt-4-1200 {
+        margin-top: 25px;
+    }
+}
+
+/* Input */
+.input-primary {
+    background-color: #111;
+    border: 1px solid #999;
+    border-radius: 5px;
+    padding: 10px 20px;
+    color: #eee;
+    outline: none;
+}
+
+.input-number {
+    background-color: #111;
+    border: 1px solid #999;
+    border-radius: 5px;
+    padding: 20px 10px;
+    color: #eee;
+    outline: none;
+    width: 20px !important;
+    font-size: 25px;
+    text-align: center;
+}
+
+/* Scroll bar */
+::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+::-webkit-scrollbar-track {
+    background-color: #111;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #999;
+    border-radius: 30px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+/* Button Styles */
+.btn-primary {
+    cursor: pointer !important;
+}
+
+/* Test Decoration */
+.text-decoration-none {
+    text-decoration: none;
+}
