@@ -1,0 +1,49 @@
+    body {font-family: Arial, Helvetica, sans-serif;}
+    * {box-sizing: border-box;}
+    
+    input[type=text], select, textarea {
+      width: 100%;
+      padding: 12px;
+      border-bottom: 1px solid black;
+      box-sizing: border-box;
+      margin-top: 6px;
+      margin-bottom: 16px;
+      resize: vertical;
+      outline:none;
+      border-top:none;
+      border-left:none;
+      border-right:none;
+    }
+    
+    input[type=submit] {
+      color: black;
+      font-weight: bold;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 40px;
+      cursor: pointer;
+      outline:none;
+      border:3px solid black;
+      transition:0.3s;
+      float:left;
+    }
+    
+    input[type=submit]:hover {
+      border:3px solid blueviolet;
+      transition:0.3s;
+      color:blueviolet;
+    }
+    
+    .container {
+        border-radius: 5px;
+        padding: 20px;
+        outline:none;
+        width:60%;
+        margin: 0;
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+    }
